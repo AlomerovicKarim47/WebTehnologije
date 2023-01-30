@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bs"> 
+<head>
+	<title>Add student</title>
+	<link rel="stylesheet" href="addStudent.css">
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<div id = "header">
+	<div id = "logo">
+		<img src="lupa.png" alt = "lupa">
+	</div>
+	<h1>Dodavanje studenta</h1>
+	<ul id = "meni">
+		<li><a href = "zadaci.html">Pregled godina</a></li>
+		<li><a href = "studenti.html">Pregled studenata</a></li>
+		<li><a href = "commiti.html">Pregled commita</a></li>
+		
+		<li><a href = "addGodina.html">Dodavanje godine</a></li>		
+		<li><a href = "addStudent.html">Dodavanje studenta</a></li>
+		<li><a href = "addVjezba.html">Dodavanje vjezbe</a></li>
+		<li><a href = "addZadatak.html">Dodavanje zadatka</a></li>
+	</ul>
+</div>
+
+<div id = "kontejner">
+	<div id = "glavniSadrzaj">
+		
+		<form name = "fMasovni" action = "#" onsubmit="return false">
+			<select name = "sGodina"></select><br><br>
+			<input type = "text" name = "key"><br><br>
+			<input type = "text" name = "secret"><br><br>
+			<button value = "Ucitaj">Ucitaj</button><br><br>
+			<input type = "button" value = "Dodaj" disabled>
+
+		</form>
+	</div>
+</div>
+
+<div id = "footer">Web tehnologije 2018/2019</div>
+
+</body>
+<script type="text/javascript" src = "validacija.js"></script>
+<script type="text/javascript" src = "addStudent.js"></script>
+<script type="text/javascript" src = "BitBucket.js"></script>
+</html>

@@ -1,0 +1,28 @@
+body{
+	background-color: #2851a4;
+}
+
+input{
+	margin:10px;
+}
+
+input[name = "login"]{
+	margin-left: 180px;
+}
+
+
+#login{
+	background-color: #cccccc;
+	width: 350px;
+	height: 250px;
+	margin:auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	position: absolute;
+	box-sizing: border-box;
+	vertical-align: middle;
+	padding-top: 80px;
+	padding-left: 50px;
+}

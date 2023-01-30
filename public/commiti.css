@@ -1,0 +1,96 @@
+*{
+	box-sizing: border-box;
+}
+h1, h2, ul, body, div{
+	margin:0;
+}
+a{
+	color: #cccccc;
+}
+a:hover{
+	color: black;
+}
+
+#header{
+	float:left;
+	width: 100%;
+	background-color: #2851a4;
+	padding: 10px;
+	color: #cccccc;
+}
+#header > h1{
+	float: right;
+}
+#logo{
+	float: left;
+}
+#meni{
+	float:left;
+	width: 100%;
+	padding: 0;
+}
+#meni > li{
+	display: inline;
+}
+#footer{
+	float:left;
+	width: 100%;
+	background-color: #2851a4;padding: 10px;
+	color: #cccccc;
+}
+#kontejner{
+	padding: 10px;
+	overflow: hidden;
+	background-color: #8cb3d9;
+}
+#podaci{
+	margin-top: 20px;	
+	margin-bottom: 40px;
+	margin-left: 5%	;
+}
+table{
+	border:1px solid black;
+	border-collapse: collapse;
+	background-color: white;
+	margin-left: 5%;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+td{
+	border:1px solid black;
+	width:10%;
+	text-align: center;
+}
+tr:nth-child(1){
+	background-color: #00cccc;
+}
+
+@media (max-width: 600px)
+{
+	#header{
+		display: flex;
+		flex-flow: column;
+	}
+	#logo{
+		width: 100%;
+		
+	}
+	#header > h1{
+		
+		order:2;
+		width: 100%;
+		
+	}
+	#meni{
+		order:1;
+		width: 100%;
+
+	}
+	#glavniSadrzaj{
+		
+		width: 100%;
+	}
+	#side{
+		width:100%;
+	}
+} 

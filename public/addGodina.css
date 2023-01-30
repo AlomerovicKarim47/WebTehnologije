@@ -1,0 +1,104 @@
+h1, h2, ul, body, div{
+	margin:0;
+
+}
+* {
+    box-sizing: border-box;
+}
+a{
+	color: #cccccc;
+}
+a:hover{
+	color: black;
+}
+
+#header{
+	float:left;
+	width: 100%;
+	background-color: #2851a4;
+	padding: 10px;
+	color: #cccccc;
+}
+#header > h1{
+	float: right;
+}
+#logo{
+	float: left;
+}
+#meni{
+	float:left;
+	width: 100%;
+	padding: 0;
+}
+#meni > li{
+	display: inline;	
+}
+#footer{
+	float:left;
+	width: 100%;
+	background-color: #2851a4;padding: 10px;
+	color: #cccccc;
+}
+
+#side{
+	background-color: #8cb3d9;
+	float:left;
+	width: 35%;
+	padding: 30px;
+	padding-left: 6%;
+}
+
+#glavniSadrzaj{
+	background-color: #cccccc;
+	float: right;
+	width: 65%;
+}
+
+.godina{
+	width: 200px;
+	height: 180px;
+	margin: 30px;
+	background-color: #6f94dc;
+	float: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+input[type = "button"], input[type = "submit"]{
+	margin-top: 20px;
+	margin-right: 28px;
+	width: 70px;
+}
+
+
+@media (max-width: 600px)
+{
+	#header{
+		display: flex;
+		flex-flow: column;
+	}
+	#logo{
+		width: 100%;
+		
+	}
+	#header > h1{
+		
+		order:2;
+		width: 100%;
+		
+	}
+	#meni{
+		order:1;
+		width: 100%;
+	}
+	#side{
+		width: 100%;
+	}
+	#glavniSadrzaj{
+		float:left;
+		width: 100%;
+	}
+	
+} 

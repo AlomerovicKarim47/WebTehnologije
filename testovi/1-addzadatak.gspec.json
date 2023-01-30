@@ -1,0 +1,74 @@
+{
+  "testId" : "1-addzadatak.gspec",
+  "name" : "addZadatak.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  addZadatak.gspec --url http://localhost/addZadatak.html --size 1024x768 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: addZadatak.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541452910171,
+          "sections" : [ {
+            "name" : "Testing",
+            "place" : {
+              "filePath" : "addZadatak.gspec",
+              "lineNumber" : 8
+            },
+            "objects" : [ {
+              "name" : "forma",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addZadatak.gspec",
+                  "lineNumber" : 10
+                },
+                "name" : "inside glavni",
+                "highlight" : [ "forma", "glavni" ]
+              } ]
+            }, {
+              "name" : "glavni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addZadatak.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "width ~85% of body/width",
+                "highlight" : [ "glavni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addZadatak.gspec",
+                  "lineNumber" : 13
+                },
+                "name" : "below header",
+                "highlight" : [ "glavni", "header" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "glavni" : {
+              "area" : [ 75, 75, 856, 371 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 1008, 75 ]
+            },
+            "forma" : {
+              "area" : [ 95, 95, 817, 331 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541452909447,
+        "type" : "node"
+      } ],
+      "time" : 1541452904910,
+      "type" : "node"
+    } ]
+  }
+}

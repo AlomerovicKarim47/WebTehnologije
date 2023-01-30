@@ -1,0 +1,159 @@
+{
+  "testId" : "1-studenti2.gspec",
+  "name" : "studenti2.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  studenti2.gspec --url http://localhost/studenti.html --size 599x768 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: studenti2.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541531632475,
+          "sections" : [ {
+            "name" : "Header",
+            "place" : {
+              "filePath" : "studenti2.gspec",
+              "lineNumber" : 14
+            },
+            "objects" : [ {
+              "name" : "naslov",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti2.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "below meni",
+                "highlight" : [ "naslov", "meni" ]
+              } ]
+            }, {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti2.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "inside header",
+                "highlight" : [ "meni", "header" ]
+              } ]
+            }, {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti2.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "above meni",
+                "highlight" : [ "logo", "meni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti2.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "inside header",
+                "highlight" : [ "logo", "header" ]
+              } ]
+            }, {
+              "name" : "side",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti2.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "below header",
+                "highlight" : [ "side", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti2.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "above footer",
+                "highlight" : [ "side", "footer" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti2.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "width ~100% of body/width",
+                "highlight" : [ "side" ]
+              } ]
+            }, {
+              "name" : "glavni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti2.gspec",
+                  "lineNumber" : 29
+                },
+                "name" : "below header",
+                "highlight" : [ "glavni", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti2.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "below side",
+                "highlight" : [ "glavni", "side" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti2.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "above footer",
+                "highlight" : [ "glavni", "footer" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti2.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "width 100% of body/width",
+                "highlight" : [ "glavni" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "meni" : {
+              "area" : [ 10, 46, 563, 36 ]
+            },
+            "naslov" : {
+              "area" : [ 10, 82, 563, 37 ]
+            },
+            "side" : {
+              "area" : [ 0, 129, 583, 185 ]
+            },
+            "footer" : {
+              "area" : [ 0, 499, 583, 38 ]
+            },
+            "glavni" : {
+              "area" : [ 0, 314, 583, 185 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 583, 129 ]
+            },
+            "logo" : {
+              "area" : [ 10, 10, 563, 36 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541531631600,
+        "type" : "node"
+      } ],
+      "time" : 1541531627226,
+      "type" : "node"
+    } ]
+  }
+}

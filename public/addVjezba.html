@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+	<title>Add vjezba</title>
+	<link rel="stylesheet" href="addVjezba.css">
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<div id = "header">
+	<div id = "logo">
+		<img src="lupa.png" alt = "lupa">
+	</div>
+	<h1>Dodavanje vježbe/spirale</h1>
+	<ul id = "meni">
+		<li><a href = "zadaci.html">Pregled godina</a></li>
+		<li><a href = "studenti.html">Pregled studenata</a></li>
+		<li><a href = "commiti.html">Pregled commita</a></li>
+		
+		<li><a href = "addGodina.html">Dodavanje godine</a></li>		
+		<li><a href = "addStudent.html">Dodavanje studenta</a></li>
+		<li><a href = "addVjezba.html">Dodavanje vjezbe</a></li>
+		<li><a href = "addZadatak.html">Dodavanje zadatka</a></li>
+	</ul>
+</div>
+
+<div id = "kontejner">
+<div id = "glavniSadrzaj">
+	
+	<form name = "fPostojeca" method = "POST" action = "http://localhost:8080/addVjezba">
+		<h3>Dodavanje postojeće vježbe/spirale</h3>
+		<h4>Godina</h4>
+		<select name = "sGodine">
+			
+		</select>
+		<h4>Vježbe/spirale</h4>
+		<select name="sVjezbe">
+			
+		</select><br>
+		<input type="submit" name="submit" value = "Dodaj">
+	</form><br>
+
+	<form name = "fNova" method = "POST" action = "http://localhost:8080/addVjezba">
+		<h3>Nova vježba/spirala</h3>
+		<h4>Naziv vježbe</h4>
+		<input type="text" name="nazivVjezbe" value = "" required>
+		<h4>Godina</h4>
+		<select name = "sGodine">
+			
+		</select>
+		
+		<br><br>
+		<input type="checkbox" name="spirala"> Spirala <br>
+		<input type="submit" name="submit" value = "Dodaj">
+		
+	</form><br>
+		
+	<form name = "fPoveziZadatak" method = "POST" action = "http://localhost:8080/vjezba/:idVjezbe/zadatak">
+		<h3>Spoji zadatak i vjezbu</h3>
+		<h4>Naziv vježbe</h4>
+		<select name ="sVjezbe"></select>
+		<h4>Naziv zadatka</h4>
+		<select name = "sZadatak"></select>
+		<input type="submit" name="dZadatak" value ="Dodaj zadatak">
+	</form>
+</div>
+</div>
+
+<div id = "footer">Web tehnologije 2018/2019</div>
+
+</body>
+<script type="text/javascript" src = "validacija.js"></script>
+<script type="text/javascript" src = "addVjezba.js"></script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+	<title>Add godina</title>
+	<link rel="stylesheet" href="addGodina.css">
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<div id = "header">
+	<div id = "logo">
+		<img src="lupa.png" alt = "lupa">
+	</div>
+	<h1>Dodavanje godine</h1>
+	<ul id = "meni">
+		<li><a href = "zadaci.html">Pregled godina</a></li>
+		<li><a href = "studenti.html">Pregled studenata</a></li>
+		<li><a href = "commiti.html">Pregled commita</a></li>
+		
+		<li><a href = "addGodina.html">Dodavanje godine</a></li>		
+		<li><a href = "addStudent.html">Dodavanje studenta</a></li>
+		<li><a href = "addVjezba.html">Dodavanje vjezbe</a></li>
+		<li><a href = "addZadatak.html">Dodavanje zadatka</a></li>
+		
+	</ul>
+</div>
+
+<div id = "side">
+	<form method = "POST" action = "http://localhost:8080/addGodina">
+		<h4>Naziv godine</h4>
+		<input type="text" name="nazivGod" required>
+
+		<h4>Naziv repozitorija vježbe</h4>
+		<input type="text" name="nazivRepVje" required>
+
+		<h4>Naziv repozitorija spirale</h4>
+		<input type="text" name="nazivRepSpi" required><br>
+
+		<input type="button" name="ponisti" value="Ponisti">
+		<input type="submit" name="submit" value = "Unesi">
+		<input type="button" name="osvjezi" value="Osvjezi">
+	</form>
+</div>
+
+<div id = "glavniSadrzaj">
+	<div class="godina">2015/2016<br>Broj studenata: 90<br>Broj vjezbi: 10<br>Broj spirala:4</div>
+	<div class="godina">2016/2017<br>Broj studenata: 90<br>Broj vjezbi: 10<br>Broj spirala:4</div>
+	<div class="godina"></div>
+	<div class="godina"></div>
+</div>
+
+<div id = "footer">Web tehnologije 2018/2019</div>
+
+</body>
+<script type="text/javascript" src = "validacija.js"></script>
+<script type="text/javascript" src = "addGodina.js"></script>
+<script type = "text/javascript" src = "GodineAjax.js"></script>
+<script type = "text/javascript" src = "ZadaciAjax.js"></script>
+</html>

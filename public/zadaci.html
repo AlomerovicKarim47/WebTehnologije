@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+	<title>Zadaci</title>
+	<link rel="stylesheet" href="zadaci.css">
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<div id = "header">
+	<div id = "logo">
+		<img src="lupa.png" alt = "lupa">
+	</div>
+	<h1>Odabir vježbe</h1>
+	<ul id = "meni">
+		<li><a href = "zadaci.html">Pregled godina</a></li>
+		<li><a href = "studenti.html">Pregled studenata</a></li>
+		<li><a href = "commiti.html">Pregled commita</a></li>
+		
+		<li><a href = "addGodina.html">Dodavanje godine</a></li>		
+		<li><a href = "addStudent.html">Dodavanje studenta</a></li>
+		<li><a href = "addVjezba.html">Dodavanje vjezbe</a></li>
+		<li><a href = "addZadatak.html">Dodavanje zadatka</a></li>
+	</ul>
+</div>
+
+<div class = "cetvrtina">
+	<h2>Godina</h2>
+	<ul>
+		<li tabindex="1">Godina 2014/2015</li>
+		<li tabindex="1">Godina 2015/2016</li>
+		<li tabindex="1">Godina 2016/2017</li>
+		<li tabindex="1">Godina 2017/2018</li>
+		<li tabindex="1">Godina 2018/2019</li>
+	</ul>
+</div>
+
+<div class="cetvrtina">
+	<h2>Student</h2>
+	<form action = "#" onsubmit = "return false">
+		<input type="text" name="query"> <br>
+		<input type="submit" name="search" value="Search">
+	</form>
+	<ul>
+		<li>Ime i prezime | index</li>
+		<li tabindex="1">Neko Nekić | 12345</li>
+		<li tabindex="1">Neko Nekić | 12345</li>
+		<li tabindex="1">Neko Nekić | 12345</li>
+		<li tabindex="1">Neko Nekić | 12345</li>
+	</ul>
+</div>
+
+<div class="polovina">
+	<div class ="folder">
+		<h3>Vježbe</h3>
+		<div class="item">Vježba 1</div>
+		<div class="item">Vježba 2</div>
+		<div class="item">Vježba 3</div>
+		<div class="item">Vježba 4</div>
+		<div class="item">Vježba 5</div>
+		<div class="item">Vježba 6</div>
+	</div>
+	<div class="folder">
+		<h3>Spirale</h3>
+		<div class="item">Spirala 1</div>
+		<div class="item">Spirala 2</div>
+		<div class="item">Spirala 3</div>
+		<div class="item">Spirala 4</div>
+	</div>
+</div>
+
+<div id = "footer">Web tehnologije 2018/2019</div>
+</body>
+<script type="text/javascript" src = "validacija.js"></script>
+<script type="text/javascript" src = "zadaci.js"></script>
+
+</html>

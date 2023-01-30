@@ -1,0 +1,181 @@
+{
+  "testId" : "1-studenti.gspec",
+  "name" : "studenti.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  studenti.gspec --url http://localhost/studenti.html --size 599x768 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: studenti.gspec included tags: ",
+          "status" : "error",
+          "time" : 1541531551042,
+          "sections" : [ {
+            "name" : "Header",
+            "place" : {
+              "filePath" : "studenti.gspec",
+              "lineNumber" : 13
+            },
+            "objects" : [ {
+              "name" : "naslov",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "studenti.gspec",
+                  "lineNumber" : 15
+                },
+                "name" : "above meni",
+                "errors" : [ "\"naslov\" is -73px above \"meni\" but it should be greater than or equal to 0px" ],
+                "highlight" : [ "naslov", "meni" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "studenti.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "inside header 10px top right",
+                "errors" : [ "\"naslov\" is 82px top instead of 10px" ],
+                "highlight" : [ "naslov", "header" ]
+              } ]
+            }, {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "inside header",
+                "highlight" : [ "meni", "header" ]
+              } ]
+            }, {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "above meni",
+                "highlight" : [ "logo", "meni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "inside header",
+                "highlight" : [ "logo", "header" ]
+              } ]
+            }, {
+              "name" : "side",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti.gspec",
+                  "lineNumber" : 23
+                },
+                "name" : "below header",
+                "highlight" : [ "side", "header" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "studenti.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "left-of glavni",
+                "errors" : [ "\"side\" is -583px left of \"glavni\" but it should be greater than or equal to 0px" ],
+                "highlight" : [ "side", "glavni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti.gspec",
+                  "lineNumber" : 25
+                },
+                "name" : "above footer",
+                "highlight" : [ "side", "footer" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "studenti.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "width ~65% of body/width",
+                "errors" : [ "\"side\" width is 100% [583px] which is not in range of 63 to 67% [367 to 390px]" ],
+                "highlight" : [ "side" ]
+              } ]
+            }, {
+              "name" : "glavni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "below header",
+                "highlight" : [ "glavni", "header" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "studenti.gspec",
+                  "lineNumber" : 29
+                },
+                "name" : "right-of side",
+                "errors" : [ "\"glavni\" is -583px right of \"side\" but it should be greater than or equal to 0px" ],
+                "highlight" : [ "glavni", "side" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "above footer",
+                "highlight" : [ "glavni", "footer" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "studenti.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "width 35% of body/width",
+                "errors" : [ "\"glavni\" width is 100% [583px] instead of 35% [204px]" ],
+                "highlight" : [ "glavni" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "meni" : {
+              "area" : [ 10, 46, 563, 36 ]
+            },
+            "naslov" : {
+              "area" : [ 10, 82, 563, 37 ]
+            },
+            "side" : {
+              "area" : [ 0, 129, 583, 185 ]
+            },
+            "footer" : {
+              "area" : [ 0, 499, 583, 38 ]
+            },
+            "glavni" : {
+              "area" : [ 0, 314, 583, 185 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 583, 129 ]
+            },
+            "logo" : {
+              "area" : [ 10, 10, 563, 36 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541531550053,
+        "type" : "node"
+      } ],
+      "time" : 1541531545718,
+      "type" : "node"
+    } ]
+  }
+}

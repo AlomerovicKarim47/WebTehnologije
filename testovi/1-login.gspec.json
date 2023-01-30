@@ -1,0 +1,80 @@
+{
+  "testId" : "1-login.gspec",
+  "name" : "login.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  login.gspec --url http://localhost/login.html --size 1024x768 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: login.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541445429562,
+          "sections" : [ {
+            "name" : "Login section",
+            "place" : {
+              "filePath" : "login.gspec",
+              "lineNumber" : 6
+            },
+            "objects" : [ {
+              "name" : "form",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "login.gspec",
+                  "lineNumber" : 8
+                },
+                "name" : "inside login",
+                "highlight" : [ "form", "login" ]
+              } ]
+            }, {
+              "name" : "input",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "login.gspec",
+                  "lineNumber" : 10
+                },
+                "name" : "inside form",
+                "highlight" : [ "input", "form" ]
+              } ]
+            }, {
+              "name" : "login",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "login.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "centered all inside screen",
+                "highlight" : [ "login", "screen" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "input" : {
+              "area" : [ 454, 283, 173, 21 ]
+            },
+            "form" : {
+              "area" : [ 379, 273, 300, 123 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 1008, 636 ]
+            },
+            "login" : {
+              "area" : [ 329, 193, 350, 250 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541445428905,
+        "type" : "node"
+      } ],
+      "time" : 1541445424503,
+      "type" : "node"
+    } ]
+  }
+}

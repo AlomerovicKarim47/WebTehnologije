@@ -1,0 +1,101 @@
+h1, h2, ul, body, div{
+	margin:0;
+
+}
+* {
+    box-sizing: border-box;
+}
+a{
+	color: #cccccc;
+}
+a:hover{
+	color: black;
+}
+
+#header{
+	float:left;
+	width: 100%;
+	background-color: #2851a4;
+	padding: 10px;
+	color: #cccccc;
+}
+#header > h1{
+	float: right;
+}
+#logo{
+	float: left;
+}
+#meni{
+	float:left;
+	width: 100%;
+	padding: 0;
+}
+#meni > li{
+	display: inline;	
+}
+#footer{
+	float:left;
+	width: 100%;
+	background-color: #2851a4;padding: 10px;
+	color: #cccccc;
+}
+#kontejner{
+	background-color: #cccccc;
+}
+#glavniSadrzaj{
+	width: 85%;
+	background-color: #8cb3d9;
+	overflow: hidden;
+	padding: 20px;
+	margin:auto;
+}
+form{
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 60px;
+}
+
+input[type = "submit"]{
+	margin-left: 200px;
+}
+
+select{
+	width: 150px;
+}
+
+form > ul{
+	list-style-type: none;
+	width: 200px;
+	height:70px;
+	padding: 0;
+	padding-left: 10px;
+	border: 1px solid black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 600px)
+{
+	#header{
+		display: flex;
+		flex-flow: column;
+	}
+	#logo{
+		width: 100%;
+		
+	}
+	#header > h1{
+		
+		order:2;
+		width: 100%;
+		
+	}
+	#meni{
+		order:1;
+		width: 100%;
+	}
+	#glavniSadrzaj{
+		width:100%;
+	}
+} 

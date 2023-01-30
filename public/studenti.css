@@ -1,0 +1,123 @@
+h1, h2, ul, body{
+	margin:0;
+}
+*{
+	box-sizing: border-box;
+}
+a{
+	color: #cccccc;
+}
+a:hover{
+	color: black;
+}
+
+#header{
+	float:left;
+	width: 100%;
+	background-color: #2851a4;
+	padding: 10px;
+	color: #cccccc;
+}
+#header > h1{
+	float: right;
+}
+#logo{
+	float: left;
+}
+#meni{
+	float:left;
+	width: 100%;
+	padding: 0;
+}
+#meni > li{
+	display: inline;
+}
+
+
+
+#side > ul{
+	width: 150px;
+	height: 100%;
+	overflow-y: scroll;
+	list-style: none;
+	padding: 0;
+	background-color: white;
+	margin-left: 30%;
+	width:50%;
+	margin-bottom: 30px;
+}
+
+#side > h2{
+	display: block;
+	margin: auto;
+	margin-left: 50%;
+	margin-top: 20px;
+}
+
+#side{
+	overflow: hidden;
+	float:left;
+	width: 65%;
+	background-color: #99ccff;
+}
+
+
+#glavniSadrzaj{
+	padding:20px;
+	float: right;
+	width: 35%;
+	background-color: #cccccc;
+}
+
+#footer{
+	float:left;
+	width: 100%;
+	background-color: #2851a4;padding: 10px;
+	color: #cccccc;
+}
+
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+	background-color: white;
+}
+td{
+	border: 1px solid black;
+	width: 80px;
+	height: 20px;
+	color: black;
+}
+tr:nth-child(1)
+{
+	background-color: #00cccc;
+}
+
+@media (max-width: 600px)
+{
+	#header{
+		display: flex;
+		flex-flow: column;
+	}
+	#logo{
+		width: 100%;
+		
+	}
+	#header > h1{
+		
+		order:2;
+		width: 100%;
+		
+	}
+	#meni{
+		order:1;
+		width: 100%;
+
+	}
+	#glavniSadrzaj{
+		
+		width: 100%;
+	}
+	#side{
+		width:100%;
+	}
+} 

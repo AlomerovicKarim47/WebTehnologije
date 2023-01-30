@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+	<title>Add zadatak</title>
+	<link rel="stylesheet" href="addZadatak.css">
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<div id = "header">
+	<div id = "logo">
+		<img src="lupa.png" alt = "lupa">
+	</div>
+	<h1>Dodavanje zadatka</h1>
+	<ul id = "meni">
+		<li><a href = "zadaci.html">Pregled godina</a></li>
+		<li><a href = "studenti.html">Pregled studenata</a></li>
+		<li><a href = "commiti.html">Pregled commita</a></li>
+		
+		<li><a href = "addGodina.html">Dodavanje godine</a></li>		
+		<li><a href = "addStudent.html">Dodavanje studenta</a></li>
+		<li><a href = "addVjezba.html">Dodavanje vjezbe</a></li>
+		<li><a href = "addZadatak.html">Dodavanje zadatka</a></li>
+	</ul>
+</div>
+<div id = "kontejner">
+<div id = "glavniSadrzaj">
+	<form action = "http://localhost:8080/addZadatak" method = "POST" enctype="multipart/form-data">
+		<h2>Novi zadatak</h2>
+		<h4>Naziv zadatka</h4> 
+		<input type="text" name="naziv" required>
+		<h4>Tekst postavke</h4>
+		<input type="file" name="postavka" required> 
+
+		<h4>Vježbe/spirale</h4>
+		<select><option value="Vjezba X">Vjezba X</option></select><br>
+		<input type="submit" name="Dodaj" value="Dodaj">
+	</form>
+</div>
+</div>
+<div id = "footer">Web tehnologije 2018/2019</div>
+
+</body>
+<script type="text/javascript" src = "validacija.js"></script>
+<script type="text/javascript" src = "addZadatak.js"></script>
+</html>
